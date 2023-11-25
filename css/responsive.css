@@ -1,0 +1,413 @@
+/*medea MEDEA----------------------------
+---------------------------------------
+----------------------------------------MEDEA*/
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 100%;
+  }
+  .container_header {
+    max-width: 95%;
+    margin: auto;
+  }
+  .first_content {
+    max-width: 95%;
+  }
+  .container_second {
+    max-width: 95%;
+  }
+  .product {
+    max-width: 95%;
+  }
+  .container_section {
+    max-width: 95%;
+  }
+  .container_footer {
+    max-width: 95%;
+  }
+  .container_footer {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .first_content {
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    padding: 100px;
+    gap: 90px;
+  }
+  .box {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header_img {
+    width: 400px;
+  }
+  .header_img img {
+    width: 400px;
+  }
+  #water_ice {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    height: 50%;
+    transform: rotate(4.793deg);
+    z-index: 2;
+  }
+  .doom {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: #d23166;
+    opacity: 0.1;
+    z-index: 1;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    z-index: -0.5;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .first_content {
+    justify-content: space-between;
+  }
+  .box {
+    max-width: 40%;
+  }
+  .product_title {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 968px) {
+  .header_text {
+    padding-top: 50px;
+  }
+  .header_img {
+    padding-top: 50px;
+  }
+  .second_img {
+    width: 50%;
+  }
+  .second_img img {
+    max-width: 400px;
+  }
+
+  .section1 {
+    padding-top: 50px;
+  }
+  .section_first_title h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header_text h1 {
+    font-size: 30px;
+  }
+
+  .header_text h1 span {
+    font-size: 30px;
+  }
+
+  .header_text p {
+    padding-top: 15px;
+  }
+  .header_text button {
+    margin-top: 30px;
+  }
+  #water_ice {
+    max-width: 250px;
+    top: 42%;
+    left: 20%;
+    height: 250px;
+  }
+  .doom {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  nav a {
+    display: none;
+  }
+  #nav_button {
+    display: none;
+  }
+  header {
+    height: 1100px;
+  }
+  .header_content {
+    margin-top: 100px;
+    flex-direction: column;
+  }
+
+  .header_text {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .header_text h1 {
+    font-size: 37px;
+  }
+  .header_text h1 span {
+    font-size: 37px;
+  }
+  .header_img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 597px;
+    padding-top: 52px;
+  }
+  .header_img img {
+    width: 500px;
+  }
+  #water_ice {
+    top: 50%;
+    left: 25%;
+  }
+  .doom {
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 30%;
+  }
+  .first_content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+  }
+  .box {
+    max-width: 100%;
+  }
+  .box h3 {
+    font-size: 24px;
+  }
+  .box p {
+    font-size: 18px;
+  }
+
+  .container_second {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+  .second_content {
+    padding: 50px;
+    height: auto;
+  }
+  .section1,
+  .section2,
+  .section3,
+  .section4 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .product {
+    gap: 50px;
+  }
+  .litle_title {
+    padding-bottom: 10px;
+  }
+  .price1,
+  .price2,
+  .price3 {
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .product_title h3 {
+    font-size: 32px;
+  }
+  .product_title {
+    width: 70%;
+  }
+  .litle_title {
+    width: 100%;
+  }
+  .links_product a {
+    font-size: 16px;
+  }
+  .container_section {
+    flex-direction: column;
+  }
+  section {
+    padding: 50px;
+    height: auto;
+  }
+  .section_sale {
+    justify-content: center;
+    align-items: center;
+  }
+  .appstore {
+    align-items: center;
+    justify-content: center;
+  }
+  .appstore img {
+    width: 50%;
+  }
+  .sale {
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+  .section_img img {
+    margin-top: 0px;
+  }
+  .section_title {
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+  }
+  .section_first_title {
+    max-width: 100%;
+  }
+  .input_div {
+    max-width: 90%;
+  }
+  .second_img {
+    width: 100%;
+  }
+  .second_img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 652px) {
+  .link_footer {
+    width: 100%;
+    align-items: center;
+  }
+  .link_footer a {
+    font-size: 18px;
+  }
+  .link_footer p {
+    max-width: 50%;
+    font-size: 20px;
+  }
+  .social {
+    gap: 20px;
+  }
+  .social img {
+    width: 30px;
+    height: 30px;
+  }
+  .input_help h1 {
+    font-size: 34px;
+  }
+  .link_footer {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .litle_title {
+    width: 100%;
+    gap: 10px;
+  }
+  .title h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 444px) {
+  .header_content {
+    flex-direction: column;
+  }
+  .header_text {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .header_text h1 {
+    font-size: 30px;
+  }
+  .header_text h1 span {
+    font-size: 30px;
+  }
+  .header_text p {
+    font-size: 16px;
+  }
+  .header_text span {
+    font-size: 12px;
+  }
+  .header_img {
+    width: 400px;
+  }
+  .header_img img {
+    width: 400px;
+  }
+  #water_ice {
+    top: 40%;
+    left: 25%;
+    width: 50%;
+    height: 40%;
+  }
+  .doom {
+    width: 150px;
+    height: 150px;
+    top: 45%;
+    left: 30%;
+  }
+  .first_content {
+    padding: 30px;
+  }
+  .second_text h1 {
+    font-size: 32px;
+  }
+  .second_text p {
+    font-size: 14px;
+  }
+  .link_footer p {
+    max-width: 70%;
+    font-size: 20px;
+  }
+  .input_div input {
+    font-size: 14px;
+  }
+  .send {
+    height: auto;
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 368px) {
+  #water_ice {
+    top: 38%;
+    left: 30%;
+    width: 50%;
+    height: 40%;
+  }
+
+  .doom {
+    width: 150px;
+    height: 150px;
+    top: 45%;
+    left: 40%;
+  }
+  .header_img {
+    width: 350px;
+  }
+  .header_img img {
+    width: 350px;
+  }
+  .title h3 {
+    font-size: 20px;
+  }
+  .product_title p {
+    font-size: 14px;
+  }
+}

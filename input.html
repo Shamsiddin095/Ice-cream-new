@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function checkNumberInput(inputId) {
+        const inputElement = document.getElementById(inputId);
+
+        if (inputElement) {
+          const inputValue = inputElement.value;
+
+          // Tekshirish uchun regular expression (raqamni tekshirish)
+          const numberRegex = /^[0-9]+$/;
+
+          if (numberRegex.test(inputValue)) {
+            // Raqam kiritilgan bo'lsa
+            inputElement.style.color = "green"; // Yashil rang
+          } else {
+            // Raqam kiritilmagan bo'lsa yoki bosh bo'sh
+            inputElement.style.color = "red"; // Qizil rang
+          }
+
+          // Saqlash funksiyasini chaqirish (sizning kodingizda qo'shilgan funksiya)
+          saveInputData(inputElement);
+        }
+      }
+
+      // Inputga kiritilgan raqamni tekshirishni boshqa funksiyalarga bog'lang
+      function bindNumberCheck(inputId) {
+        const inputElement = document.getElementById(inputId);
+
+        if (inputElement) {
+          inputElement.addEventListener("input", function () {
+            // Kiritilgan raqamni tekshirish
+            checkNumberInput(inputId);
+          });
+        }
+      }
+
+      // Ushbu funksiyani barcha boxlar uchun chaqirish
+      window.onload = function () {
+        bindNumberCheck("input1");
+        bindNumberCheck("input2");
+        bindNumberCheck("input3");
+      };
+    </script>
+  </body>
+</html>

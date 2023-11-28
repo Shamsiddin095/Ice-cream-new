@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Searchable Boxes</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="container_nav">
+          <div class="links">
+            <ul>
+              <li>
+                <a href="#"> FOR WOMEN &blacktriangledown;</a>
+                <ul>
+                  <li><a href="#">COSMETICS</a></li>
+                  <li><a href="#">PERFUMERY</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="links">
+            <ul>
+              <li>
+                <a href="#"> FOR MEN &blacktriangledown;</a>
+                <ul>
+                  <li><a href="#">PERFUMERY</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="search_container">
+          <label>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search text"
+              oninput="filterBoxes()"
+            />
+          </label>
+          <img src="./img/image/search.png" alt="img" />
+        </div>
+
+        <div class="container_box">
+          <!-- Box 1 -->
+          <div class="box" id="box1">
+            <img
+              class="opacityimg"
+              id="myImage1"
+              src="./img/MAKEUP/1_FOR FACE/1_FOUNDATION CREAM/img1.jpeg"
+              alt="img"
+            />
+            <span> Jardin de Giverny</span>
+            <input
+              id="input1"
+              placeholder=" product $price.."
+              type="text"
+              oninput="saveInputData(this)"
+            />
+            <div class="button_conent" onclick="toggleImage('img1')">
+              <button id="button1" onclick="toggleOpacity('myImage1')"></button>
+              <img id="img1" src="./img/image/check.png" alt="img" />
+            </div>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="box" id="box2">
+            <img
+              class="opacityimg"
+              id="myImage2"
+              src="./img/MAKEUP/1_FOR FACE/1_FOUNDATION CREAM/img2.jpeg"
+              alt="img"
+            />
+            <span> Glam Team</span>
+            <input
+              id="input2"
+              placeholder=" product $price.."
+              type="text"
+              oninput="saveInputData(this)"
+            />
+            <!-------------------------------------------->
+            <div class="button_conent" onclick="toggleImage('img2')">
+              <button id="button2" onclick="toggleOpacity('myImage2')"></button>
+              <img id="img2" src="./img/image/check.png" alt="img" />
+            </div>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="box" id="box3">
+            <img
+              class="opacityimg"
+              id="myImage3"
+              src="./img/MAKEUP/1_FOR FACE/1_FOUNDATION CREAM/img3.jpeg"
+              alt="img"
+            />
+            <span> Glam Team</span>
+            <input
+              id="input3"
+              placeholder=" product $price.."
+              type="text"
+              oninput="saveInputData(this)"
+            />
+            <!-------------------------------------------->
+            <div class="button_conent" onclick="toggleImage('img3')">
+              <button id="button3" onclick="toggleOpacity('myImage3')"></button>
+              <img id="img3" src="./img/image/check.png" alt="img" />
+            </div>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="box" id="box4">
+            <img
+              class="opacityimg"
+              id="myImage3"
+              src="./img/MAKEUP/1_FOR FACE/1_FOUNDATION CREAM/img4.jpeg"
+              alt="img"
+            />
+            <span>Glam Team</span>
+            <input
+              id="input4"
+              placeholder=" product $price.."
+              type="text"
+              oninput="saveInputData(this)"
+            />
+            <!-------------------------------------------->
+
+            <div class="button_conent" onclick="toggleImage('img4')">
+              <button id="button4" onclick="toggleOpacity('myImage4')"></button>
+              <img id="img4" src="./img/image/check.png" alt="img" />
+            </div>
+          </div>
+          <!-- Type Section -->
+          <div class="type">
+            <h1>Parfum</h1>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="men">
+          <img src="./img/image/erkak.png" alt="img" />
+          <p>We have men's perfumes for you</p>
+        </div>
+        <div class="women">
+          <img src="./img/image/women.jpg" alt="img" />
+          <p>We have perfumes for women for you</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/javascript.js"></script>
+  </body>
+</html>

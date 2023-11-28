@@ -594,23 +594,50 @@ button {
   font-weight: 500;
   line-height: normal;
 }
-.fotos {
+.miniFoto {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
   gap: 20px;
   padding-top: 50px;
+  padding-bottom: 30px;
 }
-.fotos img {
+
+/*payme-----------------------------------*/
+#payme {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  width: 30%;
+  height: 50%;
+  z-index: 3;
+  border-radius: 10px;
+  background-color: #232020;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 2s, display 2.1s;
+  cursor: pointer;
+}
+#toggleBtn {
+  cursor: pointer;
+}
+#rasm1,
+#rasm3 {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
-#bola {
-  width: 40px;
-  height: 40px;
+.rasm {
+  width: 80px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
 }
-#qiz {
-  width: 40px;
-  height: 40px;
+#strelkaLeft,
+#strelkaRight {
+  width: 20px;
+  height: 20px;
 }
 .price1 {
   padding-top: 34px;

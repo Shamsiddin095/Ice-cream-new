@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Container Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        width: 500px;
+        height: 800px;
+        background-color: #f0f0f0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease-in-out, display 0.5s ease-in-out;
+      }
+
+      #toggleBtn {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="toggleBtn">Toggle Container</button>
+    <div id="container">
+      <!-- Your content goes here -->
+      <p>This is the centered content.</p>
+    </div>
+
+    <script>
+      var container = document.getElementById("container");
+      var toggleBtn = document.getElementById("toggleBtn");
+
+      toggleBtn.addEventListener("click", function () {
+        container.style.display =
+          container.style.display === "none" ? "block" : "none";
+        container.style.transform =
+          container.style.transform === "translate(-50%, -50%) scale(0.1)"
+            ? "translate(-50%, -50%) scale(1)"
+            : "translate(-50%, -50%) scale(0.1)";
+      });
+    </script>
+  </body>
+</html>

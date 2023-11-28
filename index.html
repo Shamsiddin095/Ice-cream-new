@@ -10,6 +10,7 @@
   </head>
   <body>
     <div class="container">
+      <div id="payme"></div>
       <header>
         <div class="container_header">
           <div class="navbar">
@@ -139,7 +140,7 @@
                 ><span id="price_defoult">$22.55</span>
               </div>
 
-              <button>Buy now</button>
+              <button onclick="buy()" id="toggleBtn">Buy now</button>
             </div>
           </div>
 
@@ -160,7 +161,7 @@
                 ><span id="price_defoult">$22.55</span>
               </div>
 
-              <button>Buy now</button>
+              <button onclick="buy()" id="toggleBtn">Buy now</button>
             </div>
           </div>
           <!--3------------------------------------->
@@ -180,7 +181,7 @@
                 <span id="price_defoult">$22.55</span>
               </div>
 
-              <button>Buy now</button>
+              <button onclick="buy()" id="toggleBtn">Buy now</button>
             </div>
           </div>
           <!--4-->
@@ -190,7 +191,7 @@
             </div>
             <div class="product_title">
               <div class="litle_title">
-                <img src="./img/qizgroup.svg" alt="img" />
+                <img src="./img/2minifotos/rasm2.svg" alt="img" />
                 <div class="title">
                   <h3>Adele A. McNeill</h3>
                   <span id="amerikan">AMIRICAN</span>
@@ -204,13 +205,25 @@
                 a joy of best Taste. Foodie Moments.
                 <span><img src="./img/tirnoq2.svg" alt="" /></span>
               </p>
-              <div class="fotos">
-                <img src="./img/right-arrow 2.svg" alt="img" />
-                <img id="bola" src="./img/bola.png" alt="img" />
-                <img src="./img/qizgroup.svg" alt="img" />
-                <img id="qiz" src="./img/qiz1.png" alt="img" />
-
-                <img src="./img/left-arrow 1.svg" alt="img" />
+              <div class="miniFoto">
+                <img
+                  id="arrowLeft"
+                  src="./img/1arrow/leftt-arrow 2.svg"
+                  alt="left"
+                />
+                <img id="rasm1" src="./img/2minifotos/rasm1.png" alt="rasm1" />
+                <img
+                  id="rasm2"
+                  class="rasm"
+                  src="./img/./2minifotos/rasm2.svg"
+                  alt="rasm2"
+                />
+                <img id="rasm3" src="./img/2minifotos/rasm3.png" alt="rasm3" />
+                <img
+                  id="arrowRight"
+                  src="./img/1arrow/right-arrow 1.svg"
+                  alt="arrowRight"
+                />
               </div>
             </div>
           </div>
@@ -316,5 +329,6 @@
       </footer>
       <!--close container-->
     </div>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>
